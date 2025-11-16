@@ -8,7 +8,7 @@ from to_html import markdown_to_html_node
 
 def main():
     args = sys.argv
-    basepath = args[0] or "/"
+    basepath = len(args) > 1 and args[1] or "/"
 
     # assuming function is called from project root
     src = "static"
